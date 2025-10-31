@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px
+            }
+
+            .left{
+                width: 50%;
+                height: 100vh;
+                float: left;  
+            }
+
+            .right{
+                width: 50%;
+                height: 100vh;
+                float: right;
+            }
+
+            .right img{
+                height:auto;
+                width: 12vw;
+                margin-top: 9vw;
+                margin-left: 12vw;
+            
+            }
+
+            .right .login input[type="text"]{
+                margin-top: 1.5vw;
+                margin-left: 8vw;
+                width: 21vw;
+                height: 2.5vw;
+                border: 0.1vw solid rgb(2, 2, 2);
+                border-radius: 0.3vw;
+                opacity: 0.4;
+                font-size: 1vw;
+                color: black;
+            }
+
+            .right .login input[type="password"]{
+                margin-top: 1vw;
+                margin-left: 8vw;
+                width: 21vw;
+                height: 2.5vw;
+                border: 0.1vw solid rgb(2, 2, 2);
+                border-radius: 0.3vw;
+                opacity: 0.4;
+                font-size: 1vw;
+                color: black;
+
+            }
+
+            .right .button input[type="button"]{
+                margin-top: 1vw;
+                margin-left: 8.1vw;
+                width: 21.2vw;
+                height: 2vw;
+                background-color: rgb(34, 148, 255);
+                border: none;
+                border-radius: 0.3vw;
+                color: white;
+                font-size: 1vw;
+                font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 2vw;
+
+            }
+
+            .right .button hr{
+                width: 7.5vw;
+                margin-left: 8.5vw;
+            }
+
+            .right .button .or p{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9vw;
+                width: 2vw;
+                margin-left: 17vw;  
+                 
+             }
+
+            #second{
+                position: relative;
+                bottom: 28px;
+                left: 10px;
+            }
+
+            .right .or  hr{
+                width: 8.5vw;
+                margin-left: 20vw;
+                margin-top: -1.7vw;
+                margin-bottom: 1.5vw;
+
+            }
+
+            .right .facel a{
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1vw;
+                color: rgb(2, 78, 161);
+                font-weight: bold;
+                margin-left: 13vw;
+            }
+
+            .right  .forgot a{
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9vw;
+                color: rgb(0, 0, 0);
+                margin-left: 13.8vw;
+                margin-top: 1.1vw;
+                display: block;
+            }
+
+            .right  .forgot a:hover{
+                text-decoration: underline;
+            }
+
+            .right .an{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9vw;
+                margin-left: 12vw;
+                margin-top: 3vw;
+                width: 10vw;
+            }
+
+            .right .an a{
+                text-decoration: none;
+                color: rgb(2, 78, 161);
+                font-weight: bold;
+                margin-top: -1.1vw;
+                margin-left: 10vw;
+                width: 4vw;
+
+            }
+
+            .left img{
+                height: auto;
+                width: 33vw;
+                margin-top: 9vw;
+                margin-left: 20vw;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class ="left">
+            <img src="Screenshot_2025-10-28_171632-removebg-preview.png" alt=""/>
+
+        </div>
+        <div class ="right">
+            <img src="1683192847instagram-name-logo-black-and-white.png" alt=""/>
+            <div class="login">
+                <input type="text" placeholder="Phone number, username or email"/>
+                <input type="password" placeholder="Password"/>
+                <div class="button">
+                    <input type="button" value="Log in"> 
+                    <hr>
+                    <div id="second" class="or">
+                        <br><p>OR</p><br/>
+                        <hr>
+                        <div class="facel">
+                            <a href="#">Log in with Facebook</a>
+                            <div class="forgot">
+                                <a href="#">Forgotten password?</a>
+                                <div class="an">
+                                    Don't have an account?<a href="">Sign up</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                 </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>

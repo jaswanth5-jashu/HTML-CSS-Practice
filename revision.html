@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                background-color: rgb(255, 255, 255);
+            }
+            header{
+                width: 98vw;
+                height: 80px;
+                border: 2px solid rgb(0, 0, 0);
+                background-color: rgb(178, 242, 247);
+                position: sticky;
+                text-align: center;
+            }
+
+            header h1 i{
+            
+                background-color: rgb(178, 242, 247);
+                
+            }
+            .H{
+                color:rgba(1, 62, 83, 0.844);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: x-large;
+
+            }
+            header h1{
+                color: rgb(1, 25, 45);
+                font-size: xx-large;
+                text-align: center;
+                display: inline-block;
+
+
+            }
+        </style>
+       
+    </head>
+    <body>
+        <header>
+                <h1 id="one"><i>Smart Notes<br></i></h1>
+        </header>
+            <main>
+                <div class="box">
+                    
+                </div>
+            <section>
+                <h2><u>Subject Names</u></h2>
+                <ol>
+                    <li><h3><a href="#Python"><P>PYTHON</P></a></h3></li>
+                    <li><h3><a href="#MySQL">MYSQL</a></h3></li>
+                    <li><h3><a href="#html">HTML</a></h3></li>
+                    <li><h3><a href="#CSS">CSS</a></h3></li>
+
+                </ol>
+                <hr>
+            </section>
+            <section id="Python">
+                <center>
+                    <h2 class="H"><u>PYTHON</u></h2>
+                </center>
+                <ol>
+                    <li>Introduction to Python</li>
+                    <li>Python Basics</li>
+                    <li>Control Statements</li>
+                    <li>Data Structures in Python</li>
+                    <li>Functions</li>
+                    <li>Modules and Packages</li>
+                    <li>File Handling</li>
+                    <li>Exception Handling</li>
+                    <li>Object-Oriented Programming (OOP)</li>
+                </ol>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Introduction to Python</u></h2>
+                <ul><li><h3>&nbsp;What is Python</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A high-level, interpreted, object-oriented programming language known for its simplicity and readability.</p>
+                <ul><li><h3>&nbsp;Interpreter</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software that executes Python code line by line.</p>
+                <ul><li><h3>&nbsp;IDE</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrated Development Environment used to write and run Python programs (e.g., IDLE, VS Code).</p>
+                <ul><li><h3>&nbsp;Script</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A file containing Python code, saved with .py extension.</p>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Python Basics</u></h2>
+                <ul><li><h3>&nbsp;Keyword</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keywords are reserved words with special meanings in Python.
+                Identifiers are names for variables, functions, or classes defined by the user.</p>
+                <ul><li><h3>&nbsp;Identifier</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The name given to variables, functions, or classes.</p>
+                <ul><li><h3>&nbsp;Variable</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variables store data values, and data types define the type of data stored.
+                Common types: int, float, str, list, tuple, set, and dict.</p>
+                <ul><li><h3>&nbsp;Data Type</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defines the type of value a variable can hold (int, float, str, bool).</p>
+                <ul><li><h3>&nbsp;Type Casting</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type casting converts one data type to another using functions like int(), float(), or str().
+                It helps ensure proper data manipulation during operations.</p>
+                <ul><li><h3>&nbsp;Input Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A name that stores a value in memory.</p>
+                <ul><li><h3>&nbsp;Output Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Displays output to the screen (print() function).</p>
+                <ul><li><h3>&nbsp;Comment</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notes in code ignored by the interpreter, written with #.</p>
+                <ul><li><h3>&nbsp;Operator</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Operators perform operations on values or variables.
+                Types include arithmetic, relational, logical, bitwise, assignment, membership, and identity.</p>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Control Statements</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Control statements direct the flow of execution.
+                They include if, if-else, elif, loops (for, while), and jump statements (break, continue, pass).</p>
+                <ul><li><h3>&nbsp;if Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The if statement checks a condition — if it’s true, the code block executes.
+                It’s used for simple decision-making.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>if x > 0:print("Positive")</var></p>
+                </center>
+                <ul><li><h3>&nbsp;if-else Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The if-else statement executes one block if the condition is true, and another if false.
+                It helps handle both possible outcomes.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>if x % 2 == 0:
+                                print("Even")
+                            else:
+                                print("Odd")</p></var></p>
+                </center>
+                <ul><li><h3>&nbsp;if-elif-else Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used when there are multiple conditions to test.
+                Python checks each condition in order and executes the first one that is true.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>if marks >= 90:
+                                print("A Grade")
+                            elif marks >= 75:
+                                print("B Grade")
+                            else:
+                                print("C Grade")</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Nested if Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An if inside another if statement.
+                Used for checking multiple dependent conditions.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>if x > 0:
+                                if x < 10:
+                                    print("Single Digit Positive")</var></p>
+                </center>
+                <ul><li><h3>&nbsp;for Loop</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to iterate over a sequence like list, string, or range.
+                It runs a block of code repeatedly for each element.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(5):print(i)</var></p>
+                </center>
+                <ul><li><h3>&nbsp;while Loop</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Executes a block of code as long as a given condition is true.
+                It’s useful when the number of iterations isn’t fixed.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>while count < 5:
+                            print(count)
+                            count += 1</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Nested Loops</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When one loop runs inside another loop.
+                Used for multi-level iterations, like matrices or patterns.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(3):
+                    for j in range(2):
+                    print(i, j)</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Break Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Immediately exits the current loop, even if the condition is true.
+                Used when a specific condition is met and no further iteration is needed.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(10):
+                    if i == 5:
+                    break</var></p>
+                </center>
+                <ul><li><h3>&nbsp;continue Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skips the current iteration and moves to the next one.
+                Used when you want to skip specific values in a loop.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(5):
+                        if i == 2:
+                        continue
+                        print(i)</var></p>
+                </center>
+                <ul><li><h3>&nbsp;pass Statement</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Does nothing — acts as a placeholder to avoid syntax errors.
+                Used when code is not yet implemented.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(3):pass</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Loop with else</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The else block runs when the loop finishes normally (not broken by break).
+                Useful for checking completion conditions.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(5):
+                            print(i)
+                            else:
+                            print("Loop completed")</var></p>
+                </center>
+                <ul><li><h3>&nbsp;range() Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates a sequence of numbers for looping.
+                Syntax: range(start, stop, step)</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(1, 6):
+                    print(i)</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Nested Control Statements</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Combination of conditional and looping statements.
+                Used for complex logic like condition inside a loop or loop inside condition.</p>
+                <center>
+                    <p><b>Ex:&nbsp;</b><var>for i in range(3):
+                    if i % 2 == 0:
+                    print(i, "is even")</var></p>
+                </center>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Data Structures</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data structures organize data efficiently.
+                Python provides built-in structures like strings, lists, tuples, sets, and dictionaries.</p>
+                <ul><li><h3>&nbsp;Strings</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strings are sequences of characters enclosed in quotes.
+                They are immutable and support many built-in methods for manipulation.</p>
+                <ul><li><h3>&nbsp;Lists</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lists are ordered, mutable collections of elements.
+                They can hold mixed data types and support operations like append, remove, and sort.</p>
+                <ul><li><h3>&nbsp;Tuples</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuples are ordered and immutable collections.
+                They use parentheses () and are faster than lists.</p>
+                <ul><li><h3>&nbsp;Sets</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets are unordered collections of unique elements.
+                They support mathematical operations like union, intersection, and difference.</p>
+                <ul><li><h3>&nbsp;Dictionaries</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dictionaries store data as key-value pairs.
+                They are mutable and fast for lookups using keys.</p>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Functions</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Functions are reusable blocks of code that perform a specific task.
+                Defined using def, they improve modularity and code reusability.</p>
+                <ul><li><h3>&nbsp;Function Arguments</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arguments pass data into functions.
+                They can be positional, keyword, default, or variable-length (*args, **kwargs).</p>
+                <ul><li><h3>&nbsp;Lambda Functions</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lambda functions are small, anonymous functions written in one line.
+                They’re used for short, simple operations.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>square = lambda x: x**2
+                print(square(5))  # 25</var></p>
+                </center>   
+                <ul><li><h3>&nbsp;Recursion</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrated Development Environment used to write and run Python programs (e.g., IDLE, VS Code).Recursion occurs when a function calls itself.
+                It’s useful for repetitive problems like factorials or Fibonacci series.</p>
+                <ul><li><h3>&nbsp;Higher-Order Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A higher-order function is a function that takes one or more functions as arguments or returns another function as its result.
+                Examples include map(), filter(), and reduce().</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>def apply(func, x):
+                return func(x)</var></p>
+                </center>
+                <ul><li><h3>&nbsp;map() Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map() applies a given function to each item in an iterable (like a list) and returns a map object.
+                It’s commonly used for transforming data.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>nums = [1, 2, 3]
+                result = map(lambda x: x**2, nums)
+                print(list(result))  # [1, 4, 9]</var></p>
+                </center>
+                <ul><li><h3>&nbsp;filter() Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filter() filters elements of an iterable based on a condition defined by a function.
+                It returns only the elements for which the function returns True.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>nums = [1, 2, 3, 4]
+                even = filter(lambda x: x % 2 == 0, nums)
+                print(list(even))  # [2, 4]</var></p>
+                </center>
+                <ul><li><h3>&nbsp;reduce() Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reduce() (from functools) repeatedly applies a function to elements of an iterable to reduce it to a single value.
+                It’s used for cumulative computations like sum or product.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>from functools import reduce
+                result = reduce(lambda x, y: x + y, [1, 2, 3, 4])
+                print(result)  </var></p>
+                </center>
+                <ul><li><h3>&nbsp;Function as Argument</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python allows passing a function as an argument to another function.
+                This enables dynamic execution of code blocks.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>def greet(func):
+                print("Hello", func())</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Function Returning Function</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A function can return another function as output.
+                This is used in decorators and closures.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>def outer():
+                def inner():
+                return "Inner Function"
+                return inner</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Closures</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A closure occurs when a nested function remembers the variables from its enclosing scope even after the outer function has finished executing.
+                Closures help retain state without using global variables.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>def outer(x):
+                def inner():
+                return x
+                return inner</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Decorators</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decorators modify or enhance other functions without changing their code.
+                They’re applied using the @decorator_name syntax.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>def decorator(func):
+                def wrapper():
+                print("Before")
+                func()
+                print("After")
+                return wrapper</var></p>
+                </center>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Modules and Packages</u></h2>
+                <ul><li><h3>&nbsp;Modules</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A module is a file containing Python code (functions, classes, or variables) that can be imported into other Python programs.</p>
+                <p><b>&nbsp;&nbsp;<u>Subtopics:</u></b></p>
+                <ul>
+                    <li>Creating a Module</li>
+                    <li>Importing a Module</li>
+                    <li>Built-in Modules (like math, random, datetime)</li>
+                    <li>Using from ... import ...</li>
+                    <li>Aliasing with as</li>
+                </ul>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>(mymodule.py)
+                def greet(name):
+                return f"Hello, {name}!"</var></p>
+                <p><u>flie improting from saved file</u></p>
+                <p><b>Ex:&nbsp;</b><var>(main.py)
+                import mymodule
+                print(mymodule.greet("Jaswanth"))</var></p>
+                <p><b>Output:&nbsp;</b><var>Hello, Jaswanth!</var></p>
+                </center>
+                <ul><li><h3>&nbsp;Packages</h3></li></ul>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A package is a collection of modules organized in directories with an __init__.py file.</p>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>(Folder structure:)
+                my_package/
+                __init__.py
+                math_ops.py
+                string_ops.py</var></p>
+                <br>
+                <p><b>Ex:&nbsp;</b><var>(math_ops.py)
+                def add(a, b):
+                return a + b</var></p>
+                <br>
+                <p><b>Ex:&nbsp;</b><var>(main.py)
+                from my_package import math_ops
+                print(math_ops.add(4, 6))</var></p>
+                <br>
+                <p><b>Output:&nbsp;</b><var>10</var></p>
+                </center>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;File Handling</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to read, write, and manipulate files.</p>
+                <p><b>&nbsp;&nbsp;<u>Subtopics:</u></b></p>
+                <ul>
+                    <li>Opening Files — open(filename, mode)</li>
+                    <li>Reading Files — .read(), .readline(), .readlines()</li>
+                    <li>Writing Files — .write(), .writelines()</li>
+                    <li>File Modes — 'r', 'w', 'a', 'r+', 'x'</li>
+                    <li>Closing Files — .close()</li>
+                    <li>Using with statement (auto-close)</li>
+                </ul>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>with open("sample.txt", "w") as f:
+                f.write("Hello, Python File Handling!")
+                # Reading from file
+                with open("sample.txt", "r") as f:
+                content = f.read()
+                print(content)</var></p>
+                <br>
+                <p><b>Output:&nbsp;</b><var>Hello, Python File Handling!</var></p>
+                </center>
+                <hr>
+                <h2><u>&nbsp;Exception Handling</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to handle runtime errors and prevent program crashes.</p>
+                <p><b>&nbsp;&nbsp;<u>Subtopics:</u></b></p>
+                <ul>
+                    <li>try — Code block where an exception might occur</li>
+                    <li>except — Handles the exception when it occurs</li>
+                    <li>else — Executes if no error occurs</li>
+                    <li>finally — Executes whether error occurs or not</li>
+                    <li>raise — Used to raise custom exceptions</li>
+                </ul>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>try:
+                    num = int(input("Enter a number: "))
+                    print(10 / num)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero!")
+                except ValueError:
+                    print("Invalid input! Enter numbers only.")
+                else:
+                    print("No error occurred.")
+                finally:
+                    print("Program finished.")</var></p>
+                <br>
+                <p><b>Output:&nbsp;</b><var>Enter a number: 0<br>Cannot divide by zero!<br>Program finished.</var></p>
+                </center>
+                <hr>
+            </section>
+            <section>
+                <h2><u>&nbsp;Object Oriented Programming (OOPs)</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OOP is a programming method that organizes code using classes and objects.</p>
+                <p><b>&nbsp;&nbsp;<u>Subtopics:</u></b></p>
+                <ul>
+                    <li>Class — Blueprint for creating objects</li>
+                    <li>Object — Instance of a class</li>
+                    <li>Constructor — __init__() method used to initialize data</li>
+                    <li>Encapsulation — Hiding data using private variables</li>
+                    <li>Inheritance — Reusing properties from another class</li>
+                    <li>Polymorphism — Same method behaves differently in different classes</li>
+                    <li>Abstraction — Hiding complex details from the user</li>
+                </ul>
+                <center>
+                <p><b>Ex:&nbsp;</b><var>class Animal:
+                    def speak(self):
+                        return "Animal sound"
+
+                class Dog(Animal):
+                    def speak(self):
+                        return "Bark "
+
+                class Cat(Animal):
+                    def speak(self):
+                        return "Meow "
+
+                d = Dog()
+                c = Cat()
+                print(d.speak())
+                print(c.speak())</var></p>
+                <br>
+                <p><b>Output:&nbsp;</b><var>Bark <br>Meow </var></p>
+                </center>
+                <hr>
+            </section>
+            <section id="MySQL">
+                <center>
+                    <h2 class="H"><u>MySQL</u></h2>
+                </center>
+                <h2><u>&nbsp;Structured Query Language (SQL)</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL is a standard language used to store, retrieve, and manipulate data in relational databases like MySQL, Oracle, PostgreSQL, etc.</p>
+
+                <p><b>&nbsp;&nbsp;<u>Main Topics:</u></b></p>
+                <ul>
+                    <li>DDL — Data Definition Language</li>
+                    <li>DML — Data Manipulation Language</li>
+                    <li>DCL — Data Control Language</li>
+                    <li>TCL — Transaction Control Language</li>
+                    <li>DQL — Data Query Language</li>
+                    <li>Constraints</li>
+                    <li>Joins</li>
+                    <li>Clauses</li>
+                    <li>Subqueries</li>
+                    <li>Functions</li>
+                    <li>Views</li>
+                    <li>Indexes</li>
+                    <li>Operators</li>
+                    <li>Normalization</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;1. DDL — Data Definition Language</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to define, create, and modify database structures like tables, schemas, or indexes.</p>
+                <ul>
+                    <li><b>CREATE</b> — Creates database or table.</li>
+                    <li><b>ALTER</b> — Modifies table structure.</li>
+                    <li><b>DROP</b> — Deletes tables or databases.</li>
+                    <li><b>TRUNCATE</b> — Deletes all records from table but keeps structure.</li>
+                    <li><b>RENAME</b> — Renames table name.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>CREATE TABLE Students (ID INT, Name VARCHAR(50), Marks INT);</var></p></center>
+                <hr>
+
+                <h3>&nbsp;2. DML — Data Manipulation Language</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to manage data inside existing tables.</p>
+                <ul>
+                    <li><b>INSERT</b> — Adds new records.</li>
+                    <li><b>UPDATE</b> — Changes existing data.</li>
+                    <li><b>DELETE</b> — Removes data.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>SELECT * FROM Students WHERE Marks > 80;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;3. DCL — Data Control Language</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to control access permissions in a database.</p>
+                <ul>
+                    <li><b>GRANT</b> — Provides user privileges.</li>
+                    <li><b>REVOKE</b> — Removes privileges.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>GRANT SELECT ON Students TO user1;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;4. TCL — Transaction Control Language</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to manage transactions in a database.</p>
+                <ul>
+                    <li><b>COMMIT</b> — Saves all changes.</li>
+                    <li><b>ROLLBACK</b> — Undoes last changes.</li>
+                    <li><b>SAVEPOINT</b> — Marks a point in a transaction.</li>
+                    <li><b>SET TRANSACTION</b> — Defines transaction properties.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>COMMIT;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;5. DQL — Data Query Language</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to extract data from existing tables.</p>
+                <ul>
+                    <li><b>SELECT</b> — Retrieves data from tables.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>SELECT * FROM Students WHERE Marks > 80;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;6. Constraints</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to set rules for data in a table.</p>
+                <ul>
+                    <li><b>PRIMARY KEY</b> — Uniquely identifies each record.</li>
+                    <li><b>FOREIGN KEY</b> — Links two tables.</li>
+                    <li><b>UNIQUE</b> — Ensures all values are unique.</li>
+                    <li><b>NOT NULL</b> — Field cannot be empty.</li>
+                    <li><b>CHECK</b> — Restricts values in a column.</li>
+                    <li><b>DEFAULT</b> — Sets default value if none provided.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>CREATE TABLE Emp(ID INT PRIMARY KEY, Salary INT CHECK(Salary>5000));</var></p></center>
+                <hr>
+
+                <h3>&nbsp;7. Joins</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to combine rows from two or more tables.</p>
+                <ul>
+                    <li><b>INNER JOIN</b> — Returns matching records.</li>
+                    <li><b>LEFT JOIN</b> — Returns all from left table.</li>
+                    <li><b>RIGHT JOIN</b> — Returns all from right table.</li>
+                    <li><b>FULL JOIN</b> — Returns all records from both tables.</li>
+                    <li><b>SELF JOIN</b> — Joins table to itself.</li>
+                    <li><b>CROSS JOIN</b> — Returns all combinations.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>SELECT e.Name, d.DeptName FROM Emp e INNER JOIN Dept d ON e.DeptID=d.DeptID;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;8. Clauses</h3>
+                <ul>
+                    <li><b>WHERE</b> — Filters records.</li>
+                    <li><b>ORDER BY</b> — Sorts records.</li>
+                    <li><b>GROUP BY</b> — Groups rows with same values.</li>
+                    <li><b>HAVING</b> — Filters groups after grouping.</li>
+                    <li><b>LIMIT</b> — Restricts number of rows.</li>
+                </ul>
+                <center><p><b>Ex:</b> <var>SELECT DeptID, COUNT(*) FROM Emp GROUP BY DeptID HAVING COUNT(*)>5;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;9. Functions</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Built-in SQL functions to perform calculations.</p>
+                <ul>
+                    <li><b>COUNT()</b>, <b>SUM()</b>, <b>AVG()</b>, <b>MIN()</b>, <b>MAX()</b></li>
+                    <li>String: <b>UPPER()</b>, <b>LOWER()</b>, <b>SUBSTRING()</b></li>
+                    <li>Date: <b>NOW()</b>, <b>CURDATE()</b></li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;10. Subqueries</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query inside another query.</p>
+                <center><p><b>Ex:</b> <var>SELECT Name FROM Emp WHERE Salary > (SELECT AVG(Salary) FROM Emp);</var></p></center>
+                <hr>
+
+                <h3>&nbsp;11. Views</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A virtual table created using a query.</p>
+                <center><p><b>Ex:</b> <var>CREATE VIEW HighSalary AS SELECT * FROM Emp WHERE Salary > 50000;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;12. Indexes</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to speed up retrieval of records.</p>
+                <center><p><b>Ex:</b> <var>CREATE INDEX idx_name ON Emp(Name);</var></p></center>
+                <hr>
+            <section id="html">
+                <center>
+                    <h2 class="H"><u><abbr title="HyperText Markup Language build structure of web page">HTML</abbr></u></h2>
+                </center>
+                <h2><u>&nbsp;HyperText Markup Language (HTML)</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML is used to structure web pages using tags and attributes.</p>
+                <ul>
+                    <li>Basic Structure</li>
+                    <li>HTML Tags</li>
+                    <li>Formatting Tags</li>
+                    <li>Lists</li>
+                    <li>Tables</li>
+                    <li>Forms</li>
+                    <li>Multimedia</li>
+                    <li>Semantic Elements</li>
+                    <li>Attributes</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Basic Structure</h3>
+                <center><p><b>Ex:</b> <var>&lt;html&gt;&lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;&lt;body&gt;Welcome!&lt;/body&gt;&lt;/html&gt;</var></p></center>
+                <hr>
+
+                <h3>&nbsp;Formatting Tags</h3>
+                <ul>
+                    <li>&lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;strong&gt;, &lt;em&gt;</li>
+                    <li>&lt;sub&gt;, &lt;sup&gt;, &lt;mark&gt;</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Lists</h3>
+                <ul>
+                    <li><b>Ordered List:</b> &lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</li>
+                    <li><b>Unordered List:</b> &lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Tables</h3>
+                <ul>
+                    <li>Uses &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Forms</h3>
+                <ul>
+                    <li>&lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, &lt;button&gt;</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Semantic Tags</h3>
+                <ul>
+                    <li>&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;nav&gt;</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Multimedia Tags</h3>
+                <ul>
+                    <li>&lt;img&gt; — Displays image.</li>
+                    <li>&lt;audio&gt; — Plays sound.</li>
+                    <li>&lt;video&gt; — Plays video.</li>
+                </ul>
+                <hr>
+            </section>
+            <section id="CSS">
+                <center>
+                    <h2 class="H"><u><abbr title="Cascading Style Sheets bueaty the html page">CSS</abbr></u></h2>
+                </center>
+                <h2><u>&nbsp;Cascading Style Sheets (CSS)</u></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS defines the look and layout of HTML pages.</p>
+                <ul>
+                    <li>Selectors</li>
+                    <li>Colors and Backgrounds</li>
+                    <li>Box Model</li>
+                    <li>Combinators</li>
+                    <li>Pseudo-classes & Pseudo-elements</li>
+                    <li>Display & Position</li>
+                    <li>Flexbox & Grid</li>
+                    <li>Animations & Transitions</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Selectors</h3>
+                <ul>
+                    <li>Element Selector (p)</li>
+                    <li>ID Selector (#id)</li>
+                    <li>Class Selector (.class)</li>
+                    <li>Universal Selector (*)</li>
+                    <li>Group Selector (p,h1)</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Combinators</h3>
+                <ul>
+                    <li>Descendant (space)</li>
+                    <li>Child (&gt;)</li>
+                    <li>Adjacent (+)</li>
+                    <li>General (~)</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Box Model</h3>
+                <ul>
+                    <li>Content → Padding → Border → Margin</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Pseudo-classes and Pseudo-elements</h3>
+                <ul>
+                    <li>:hover, :active, :focus</li>
+                    <li>::before, ::after, ::first-letter</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Layout</h3>
+                <ul>
+                    <li>Display: block, inline, flex, grid</li>
+                    <li>Position: static, relative, absolute, fixed, sticky</li>
+                </ul>
+                <hr>
+
+                <h3>&nbsp;Animations & Transitions</h3>
+                <ul>
+                    <li>@keyframes for animations</li>
+                    <li>transition-duration, transition-delay</li>
+                </ul>
+                <hr>
+            </section>
+            <a href="#">top</a>
+            <center>
+                <footer>
+                    &copy; 2025 Smart Notes. All rights reserved to Jai Balayya.
+                </footer>
+            </center>
+             </main>
+     </body>
+</html>

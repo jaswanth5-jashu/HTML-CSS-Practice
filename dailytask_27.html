@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Photo Arena</title>
+  <link rel="stylesheet" href="daily_27.css" />
+</head>
+<body>
+
+  <header>
+    <h2 class="logo">PHOTO ARENA</h2>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h3>WORLD OF IMAGES</h3>
+      <h1><span id="changeText">EDITORIAL</span> PHOTOGRAPHY</h1>
+      <p>Come 💡 Capture 📸 Learn 📚</p>
+
+      <div class="buttons">
+        <button class="btn learn">Learn Now</button>
+        <button class="btn login">Login</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const words = ["7 FISH STORY", "BAHUBALLI", "RRR", "YAMADONGA"];
+    let i = 0;
+    const text = document.getElementById("changeText");
+
+    setInterval(() => {
+      text.textContent = words[i];
+      i = (i + 1) % words.length;
+    }, 1000);
+  </script>
+</body>
+</html>
